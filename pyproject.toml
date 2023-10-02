@@ -17,13 +17,13 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+  'docopt == 0.6.2',
+]
 
 [project.urls]
 "Homepage" = "https://github.com/makimo/markdown-help"
 "Bug Tracker" = "https://github.com/makimo/markdown-help/issues"
-
-[project.dependencies]
-docopt == "0.6.2"
 
 [project.scripts]
 markdown-help = "markdown_help:main"
