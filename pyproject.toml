@@ -1,12 +1,13 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "markdown_help"
-version = "0.0.2"
+version = "0.9"
 authors = [
   { name="Michal Moroz", email="michal@makimo.pl" },
+  { name="Wojciech Mielczarek", email="wojciech.mielczarek@makimo.pl" },
 ]
 description = "Generate automatic command index from a program."
 readme = "README.md"
@@ -20,3 +21,9 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/makimo/markdown-help"
 "Bug Tracker" = "https://github.com/makimo/markdown-help/issues"
+
+[project.dependencies]
+docopt == "0.6.2"
+
+[project.scripts]
+markdown-help = "markdown_help:main"

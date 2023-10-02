@@ -1,3 +1,4 @@
+```
 Generate automatic command index from a program.
 
 Usage:
@@ -15,3 +16,4 @@ Options:
     -h LEVEL, --heading LEVEL  Start from hLEVEL heading [default: 2].
     --help     Display this message.
     --version  Display version information.
+```
